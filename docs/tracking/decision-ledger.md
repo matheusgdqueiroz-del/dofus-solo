@@ -51,3 +51,7 @@
 ## 2026-04-10 - Next adjacent pregame slice stays create-via-selection
 - Decision: after success on existing-character selection to map, the next narrow pregame slice should be `populated account -> create via selection -> map`.
 - Why: it stays inside the same populated-account selection surface and is narrower than reopening the empty-account path.
+
+## 2026-04-10 - Sprint 2 must be formally reclassified before gameplay resumes
+- Decision: Sprint 2 must not continue as `existing character selection -> map` yet; it must first be reclassified into a minimal executable-surface sprint on the same branch family.
+- Why: the current repo still has no runtime, client, server, launcher, harness, or log path, so the active blocker sits before the intended gameplay slice and cannot be solved by narrow pregame work.

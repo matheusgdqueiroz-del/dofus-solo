@@ -27,6 +27,7 @@
 - Every role must end with a copy-paste-ready next prompt.
 - The first safe rebuild baseline is `populated account -> existing character selection -> map`.
 - The first implementation sprint must use fresh `world.log` as primary proof and screenshots only as corroboration.
+- Sprint 2 cannot resume its original gameplay target until the repo has a minimal executable surface.
 
 ## Last durable delta
 
@@ -52,4 +53,4 @@ Open these files in order:
 6. `docs/tracking/evidence-index.jsonl`
 7. `threads/thread_final.md`
 
-Then define the smallest safe sprint that introduces a runnable rebuild surface into this repo without bulk-copying the old project.
+Then formally reclassify Sprint 2 into the smallest safe sprint that introduces a runnable rebuild surface into this repo without bulk-copying the old project.
