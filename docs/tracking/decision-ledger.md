@@ -59,3 +59,7 @@
 ## 2026-04-10 - Planner and Architect threads should be long-lived
 - Decision: the workflow should reuse the same Planner thread and the same Architect thread until a deliberate reset is needed for context reasons.
 - Why: this matches the original workflow model more closely and reduces needless thread churn for the user.
+
+## 2026-04-10 - Reclassified Sprint 2 stops at executable-surface proof
+- Decision: the reclassified Sprint 2 is successful when the repo can build and run a minimum local executable surface that emits a deterministic repo-local artifact or health log; it does not need to reach selection or map.
+- Why: the current blocker sits before gameplay, so the safest next sprint must prove runnable surface first and only then hand back to the pregame slice.

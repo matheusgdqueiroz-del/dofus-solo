@@ -10,10 +10,11 @@
 
 ## Current state
 
-- Sprint 2 was opened on a dedicated sprint branch and then stopped by rollback.
+- Sprint 2 stays on the same branch but is now formally reclassified.
 - The repo foundation from Sprint 0 is preserved and remains the safe base.
 - Sprint 1 documentation is complete and stays as the planning baseline.
-- Sprint 2 was limited to the first narrow implementation reproof: populated account -> existing character selection -> map.
+- The original Sprint 2 gameplay goal was rolled back because there is still no runnable surface in the repo.
+- The current Sprint 2 goal is the minimum executable-surface intake needed before gameplay can resume safely.
 - The current repo tree still contains only documentation/process scaffolding, so there is no runnable rebuild surface yet for pregame validation.
 - The old project remains outside this repo and is reference-only.
 
@@ -28,18 +29,18 @@
 - Planner and Architect threads should be reused by default.
 - The first safe rebuild baseline is `populated account -> existing character selection -> map`.
 - The first implementation sprint must use fresh `world.log` as primary proof and screenshots only as corroboration.
-- Sprint 2 cannot resume its original gameplay target until the repo has a minimal executable surface.
+- Sprint 2 is now reclassified to create that minimal executable surface first.
 
 ## Last durable delta
 
-- Sprint 2 was opened from `work/s01-baseline-audit-safe` into `work/s02-pregame-existing-character-to-map`.
-- The active sprint docs now point to the live Sprint 2 branch and keep the exact slice locked as `populated account -> existing character selection -> map`.
-- The first Sprint 2 trace stopped cleanly when `git ls-tree -r --name-only HEAD` and the recursive repo scan showed no runtime, client, server, launcher, harness, or log-producing paths in this repo.
+- Sprint 2 was formally reclassified on `work/s02-pregame-existing-character-to-map`.
+- The sprint now targets the smallest repo-local executable surface instead of a gameplay slice.
+- The success boundary is now `build + run + deterministic repo-local artifact`, with no gameplay claim attached.
 
 ## Open risks
 
 - The old project can still contaminate decisions if copied blindly.
-- The next attempt can drift into an unsafe broad intake if it tries to close Sprint 2 without first defining how runnable code enters the rebuild.
+- The next attempt can drift into an unsafe broad intake if it tries to solve gameplay instead of the executable surface.
 - Closed areas like auth, launcher, protocol, and bootstrap can be reopened by habit without fresh evidence.
 
 ## Next first step after reset
@@ -49,9 +50,10 @@ Open these files in order:
 1. `AGENTS.md`
 2. `docs/tracking/current-sprint.md`
 3. `docs/resets/reset-pack.md`
-4. `docs/tracking/decision-ledger.md`
-5. `docs/tracking/baseline-matrix.md`
-6. `docs/tracking/evidence-index.jsonl`
-7. `threads/thread_final.md`
+4. `docs/plans/PLAN-s02-minimum-executable-surface-intake.md`
+5. `docs/tracking/decision-ledger.md`
+6. `docs/tracking/baseline-matrix.md`
+7. `docs/tracking/evidence-index.jsonl`
+8. `threads/thread_final.md`
 
-Then formally reclassify Sprint 2 into the smallest safe sprint that introduces a runnable rebuild surface into this repo without bulk-copying the old project.
+Then execute only the minimum executable-surface intake and stop before any gameplay slice.

@@ -1,71 +1,68 @@
 # Current Sprint
 
 - Date: 2026-04-10
-- Sprint: `S02 - Pregame Existing Character To Map`
-- Status: `stopped by rollback`
+- Sprint: `S02 - Minimum Executable Surface Intake`
+- Status: `reclassified`
 - Branch: `work/s02-pregame-existing-character-to-map`
 - Start checkpoint: `cp-20260410-0018-s02-architect-define-sprint-2-active-docs`
 - Rollback checkpoint: `cp-20260410-0020-s02-orchestrator-sprint-2-rollback-no-runtime-surface`
 
 ## Goal
 
-Reprove the smallest safe pregame slice in the new rebuild through the real user flow: populated account -> existing character selection -> map.
+Introduce the smallest runnable surface inside the new repo so later sprints can safely return to `populated account -> existing character selection -> map` without bulk-copying the old project.
 
 ## In scope
 
-- Populated account only.
-- Existing character selection visibility.
-- Existing character selection success.
-- Post-selection context and first map load only if required to land on the first map.
-- Tracking updates tied directly to fresh proof collected in this sprint.
+- The smallest repo-local executable shell needed to prove the rebuild can build and run something from inside this repo.
+- The smallest repo-local runtime path needed to emit a deterministic health artifact or log from that shell.
+- Narrow intake of support-only files strictly required for that shell to build and run.
+- Tracking updates tied directly to this executable-surface intake.
 
 ## Out of scope
 
-- Empty-account flow.
-- Character creation from an empty account.
-- Create-via-selection flow.
-- Tutorial, quest, combat, or movement after spawn.
+- Any gameplay slice, including `populated account -> existing character selection -> map`.
+- Empty-account flow, character creation, create-via-selection, tutorial, quest, combat, or movement.
+- Any auth, launcher, protocol, or bootstrap work.
 - Any broad refactor, helper rewrite, dependency swap, or old-project bulk copy.
-- Reopening auth, launcher, protocol, or bootstrap without fresh stronger evidence.
+- Any attempt to prove map load, selection success, or other gameplay behavior in this sprint.
 
 ## Success criteria
 
-- Fresh real-user run reaches visible existing-character selection with a populated account.
-- Selecting one existing character succeeds and lands on the first map.
-- Fresh `world.log` from that same run proves selection success.
-- Fresh `world.log` from that same run proves post-selection context or map load.
-- Screenshot corroborates visible existing-character selection.
-- Screenshot corroborates the map after the selected character loads.
+- The repo gains a minimal executable surface that can be built and run locally from inside this repo.
+- That surface produces at least one deterministic repo-local runtime artifact or health log.
+- The command or script to build and run that surface is documented in the sprint notes or plan.
+- The intake stays narrow and support-only, with no gameplay claim attached to it.
 
 ## Allowed paths
 
-- Narrow local fixes directly on the populated-account pregame path.
+- The smallest support-only code, config, and scripts required to build and run the executable surface.
 - Tracking and reset documents tied to this sprint.
-- Minimal deterministic patch-state updates only if the traced path proves they are necessary.
+- Repo-local runtime output paths used only for proof of execution.
 
 ## Prohibited paths
 
-- Any work on empty-account creation, tutorial, quest, combat, or movement-after-spawn.
-- Any broad patch, helper rewrite, dependency swap, or old-project copy.
-- Any reopening of auth, launcher, protocol, or bootstrap without fresh payload, log, or DB proof.
+- Any gameplay, client patching, account flow, selection flow, map load, or log-first gameplay proof.
+- Any broad patch, helper rewrite, dependency swap, or old-project bulk copy.
+- Any work that reopens auth, launcher, protocol, or bootstrap.
 
 ## Current blocker
 
-The sprint branch has no runnable rebuild surface yet. A fresh tree scan of `HEAD` shows only docs, prompts, scripts, and threads; there is no runtime, client, server, launcher, harness, or log path inside this repo to execute `populated account -> existing character selection -> map`.
+The repo still has no runnable rebuild surface. A fresh tree scan of `HEAD` shows only docs, prompts, scripts, and threads, so the immediate blocker is not gameplay but the absence of any minimal executable shell inside this repo.
 
 ## Rollback triggers
 
-- The flow requires empty-account, create-via-selection, tutorial, quest, combat, or movement work to close the sprint.
-- The blocker moves outside the existing-character selection -> map path.
+- The intake requires gameplay, selection, map, tutorial, quest, combat, or movement work to close the sprint.
+- The intake requires auth, launcher, protocol, or bootstrap work.
+- The smallest executable shell still expands into a broad runtime import or old-project rescue attempt.
 - Two narrow hypotheses fail.
-- The traced fix requires a broad patch, helper rewrite, dependency swap, or reopening auth/launcher/protocol/bootstrap without stronger evidence.
+- The traced fix requires a broad patch, helper rewrite, dependency swap, or old-project bulk copy.
 
-## Rollback outcome
+## Reclassification note
 
-- Trigger hit: the real blocker sits before the allowed `selection -> map` trail because the new rebuild repo does not yet contain the runnable implementation surface required to test or patch this slice.
-- Continuing Sprint 2 from this branch would require a broad runtime intake or old-project code import, which violates the narrow-scope rules for this sprint.
-- No fresh `world.log` or screenshots were collected, because there is no executable client/server path in the current repo to generate them.
+- The original Sprint 2 gameplay slice was stopped by rollback for lack of runtime surface.
+- Sprint 2 now targets that earlier blocker directly instead of trying to close `existing character selection -> map`.
+- No gameplay proof is expected in the reclassified sprint.
 
 ## Next narrow step
 
-Return to planning and define the smallest safe pre-runtime intake sprint that can introduce a runnable baseline into the rebuild without bulk-copying the old project.
+Have the Orchestrator introduce the minimum executable surface, prove it with a repo-local build/run artifact, and stop before any gameplay slice.
