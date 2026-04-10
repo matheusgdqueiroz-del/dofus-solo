@@ -1,55 +1,55 @@
 # Current Sprint
 
-- Date: 2026-04-09
-- Sprint: `S00 - Foundation Safe`
-- Status: `completed`
-- Branch: `work/s00-foundation-safe`
+- Date: 2026-04-10
+- Sprint: `S01 - Baseline Audit Safe`
+- Status: `active`
+- Branch: `work/s01-baseline-audit-safe`
 
 ## Goal
 
-Create the safe foundation of the new rebuild repo without touching gameplay code.
+Close, in writing, what enters the new rebuild now, what stays for later revalidation, and what remains reference-only from the old project.
 
 ## In scope
 
-- Initialize the new Git repository.
-- Add durable guardrails in `AGENTS.md`.
-- Add minimal tracking docs.
-- Add simple checkpoint and rollback scripts.
-- Keep `threads/` as historical memory.
+- Audit the safe intake for the new rebuild using `threads/thread_final.md` as the main source.
+- Lock the safest initial baseline for the rebuild.
+- Classify each important area as `carry forward now`, `revalidate later`, or `reference only`.
+- Update planning and tracking docs for Sprint 1.
 
 ## Out of scope
 
-- Port gameplay code.
-- Rebuild launcher/auth/world logic.
-- Copy large parts of the old project.
-- Fix any game bug.
+- Gameplay implementation.
+- Combat.
+- Guided Tutorial.
+- Quest flow.
+- Runtime, client, server, launcher, auth, protocol, or bootstrap work.
+- Any bulk import from the old project.
 
 ## Success criteria
 
-- Repo is under Git and linked to GitHub.
-- Sprint docs exist.
-- Checkpoint workflow exists through scripts.
-- Reset pack exists.
-- Rules against broad refactors are documented.
-- Copy-paste handoff workflow exists and is documented.
+- The safest initial baseline is defined without ambiguity.
+- `docs/tracking/baseline-matrix.md` clearly classifies the important areas.
+- The old project is documented as reference-only.
+- `docs/resets/reset-pack.md` and `docs/tracking/decision-ledger.md` match the Sprint 1 scope.
+- No files outside planning, tracking, and reset docs are changed.
 
 ## Allowed paths
 
-- `README.md`
-- `AGENTS.md`
-- `docs/**`
-- `scripts/**`
-- `threads/**`
+- `docs/plans/**`
+- `docs/tracking/**`
+- `docs/resets/reset-pack.md`
 
 ## Prohibited paths
 
-- Any gameplay or runtime code from the old project.
-- Any large binary/client asset import.
+- Any gameplay or runtime code.
+- Any client, server, or asset changes.
+- Any large import from `N:\Codex_Programs\Dofus 2 private`.
+- Any attempt to save or reuse the old project as a base.
 
 ## Current blocker
 
-None. Sprint 0 foundation work is complete.
+None. The sprint is documentation-only and can proceed from the Sprint 0 foundation.
 
 ## Next narrow step
 
-Start Sprint 1 and fill the baseline matrix using `threads/thread_final.md` as the primary source.
+Execute the first implementation sprint only for the chosen pregame baseline: populated account -> character selection -> map.

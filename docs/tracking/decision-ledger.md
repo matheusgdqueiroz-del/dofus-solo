@@ -27,3 +27,15 @@
 ## 2026-04-09 - Workflow must be copy-paste driven for the user
 - Decision: every role output must end with the next prompt and where to paste it.
 - Why: the user wants a cyclic workflow with minimal operational thinking and no ambiguity between roles.
+
+## 2026-04-10 - Sprint 1 is documentation-only
+- Decision: Sprint 1 is limited to baseline audit, planning, and tracking updates.
+- Why: the rebuild still needs a safe intake boundary before any gameplay implementation begins.
+
+## 2026-04-10 - Safe initial baseline is populated account to map
+- Decision: the first rebuild baseline is `populated account -> character selection -> map`.
+- Why: it is the smallest already-proven slice with the lowest risk and does not force tutorial, quest, or combat complexity into the first implementation sprint.
+
+## 2026-04-10 - Old project remains reference-only during Sprint 1
+- Decision: `N:\Codex_Programs\Dofus 2 private` remains reference-only and cannot be used as a code base for Sprint 1.
+- Why: Sprint 1 is about safe intake, not rescue, and the old project is still a contamination risk.
