@@ -67,3 +67,7 @@
 ## 2026-04-10 - First runnable baseline is a repo-local .NET health shell
 - Decision: the first executable surface in the new repo is a narrow .NET console shell that writes a deterministic health artifact under `docs/evidence/`.
 - Why: it is the smallest buildable and runnable local surface available in the current environment and proves execution without reopening gameplay, auth, launcher, protocol, or bootstrap areas.
+
+## 2026-04-10 - Sprint 2 closes at executable-surface proof and hands back to the pregame slice
+- Decision: Sprint 2 is complete once the repo-local .NET health shell is proven by `build + run + deterministic local artifact`, and the next narrow step returns to `populated account -> existing character selection -> map` using that shell only as the runnable baseline.
+- Why: this keeps the executable-surface blocker closed, preserves the no-gameplay boundary of Sprint 2, and gives the next Architect pass one safe narrow slice to resume.

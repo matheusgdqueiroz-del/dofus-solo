@@ -1,6 +1,6 @@
 # Baseline Matrix
 
-Use this file in Sprint 1 to classify what the rebuild should do with each important area.
+Use this file to classify what the rebuild should do with each important area.
 
 | Area | Source | Current status | Rebuild action | Notes |
 |---|---|---|---|---|
@@ -9,8 +9,8 @@ Use this file in Sprint 1 to classify what the rebuild should do with each impor
 | Pregame constants | `threads/thread_final.md` | Closed | Carry forward now | `ServerId = 36` and `7121 = ServerSelectionMessage` |
 | Client patch strategy | `threads/thread_final.md` | Closed | Carry forward now | Minimal patch only; prefer deterministic `patch-state`; no blind repatch |
 | Progress tracking model | `threads/thread_final.md` | Closed | Carry forward now | Keep tracker conservative and separate current slice from global progress |
-| Executable rebuild surface | Repo tree scan + `docs/tracking/evidence-index.jsonl` | Missing | Rebuild first | Minimum target is a repo-local executable shell with deterministic health artifact or log, not gameplay |
-| Safe initial baseline | `threads/thread_final.md` | Proven | Rebuild after executable surface | Real user flow only; populated account -> existing character selection -> map; stop at first map load |
+| Executable rebuild surface | `docs/evidence/s02-minimum-executable-surface/health.json` + `docs/tracking/evidence-index.jsonl` | Proven in Sprint 2 | Carry forward now | Repo-local .NET console shell in `src/MinimumExecutableSurface`; use it as the runnable baseline, not as gameplay proof |
+| Safe initial baseline | `threads/thread_final.md` | Proven | Resume now | Real user flow only; populated account -> existing character selection -> map; stop at first map load and keep proof log-first |
 | Empty-account creation flow | `threads/thread_final.md` | Proven | Revalidate later | Outside Sprint 1 |
 | Create-via-selection flow | `threads/thread_final.md` | Proven | Revalidate later | Outside Sprint 1 |
 | Incarnam normal quest baseline | `threads/thread_final.md` | Useful but revalidate | Revalidate later | Future normal quest anchor is `1632 Le village dans les nuages` |

@@ -6,6 +6,7 @@
 - Active branch: `work/s02-pregame-existing-character-to-map`
 - Sprint start checkpoint: `cp-20260410-0018-s02-architect-define-sprint-2-active-docs`
 - Rollback checkpoint: `cp-20260410-0020-s02-orchestrator-sprint-2-rollback-no-runtime-surface`
+- Sprint final checkpoint: `cp-20260410-0047-s02-orchestrator-add-minimum-executable-surface`
 - Last known remote: `origin/main`
 
 ## Current state
@@ -21,6 +22,7 @@
   - `dotnet run --project src/MinimumExecutableSurface/MinimumExecutableSurface.csproj --no-build`
 - The proof artifact path is `N:\Codex_Programs\Dofus 2 private_2\docs\evidence\s02-minimum-executable-surface\health.json`.
 - The artifact remained deterministic across two consecutive runs with SHA256 `3E3C34BF976F00C8E0CF640D1C00FCF624940A27ED74BEF68EE092C11800DC8B`.
+- Sprint 2 now closes at `build + run + local artifact` proof only and makes no gameplay claim.
 - No gameplay, auth, launcher, protocol, or bootstrap area was reopened.
 - The old project remains outside this repo and is reference-only.
 
@@ -46,7 +48,7 @@
 ## Open risks
 
 - The old project can still contaminate decisions if copied blindly.
-- The next attempt can drift into an unsafe broad intake if it tries to solve gameplay instead of the executable surface.
+- The next attempt can drift into an unsafe broad intake if it tries to solve more than `populated account -> existing character selection -> map`.
 - Closed areas like auth, launcher, protocol, and bootstrap can be reopened by habit without fresh evidence.
 
 ## Next first step after reset

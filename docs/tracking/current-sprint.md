@@ -7,6 +7,7 @@
 - Start checkpoint: `cp-20260410-0018-s02-architect-define-sprint-2-active-docs`
 - Rollback checkpoint: `cp-20260410-0020-s02-orchestrator-sprint-2-rollback-no-runtime-surface`
 - Execution checkpoint before implementation: `cp-20260410-0044-s02-orchestrator-mark-sprint-2-execution-start`
+- Final checkpoint: `cp-20260410-0047-s02-orchestrator-add-minimum-executable-surface`
 
 ## Goal
 
