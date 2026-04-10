@@ -1,0 +1,40 @@
+# Build output
+**/bin/
+**/obj/
+
+# Local runtime artifacts
+runtime/
+artifacts/
+tmp/
+temp/
+.cache/
+
+# Logs and screenshots
+*.log
+*.err
+*.out
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+
+# Archives and large binaries
+*.zip
+*.7z
+*.rar
+*.dll
+*.exe
+*.pdb
+*.swf
+
+# OS/editor noise
+Thumbs.db
+.DS_Store
+.vs/
+.vscode/
+
+# Local-only material that should never go to the repo
+client/
+downloads/
+local/
