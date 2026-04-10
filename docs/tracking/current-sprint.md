@@ -76,4 +76,4 @@ Resolved in this sprint. The repo now has a minimal repo-local executable shell,
 
 ## Next narrow step
 
-Return safely to the blocked slice `populated account -> existing character selection -> map`, using the new executable surface only as the runnable baseline and keeping proof centered on fresh logs/artifacts rather than screenshots.
+Return safely to the blocked slice `populated account -> existing character selection -> map`, using the executable surface only as the runnable baseline, requiring fresh `world.log` as primary proof, and rolling back immediately if that log path cannot be reached inside the allowed scope.

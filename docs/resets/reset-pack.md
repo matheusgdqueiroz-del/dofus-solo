@@ -38,6 +38,7 @@
 - The first safe rebuild baseline is `populated account -> existing character selection -> map`.
 - The first implementation sprint must use fresh `world.log` as primary proof and screenshots only as corroboration.
 - Sprint 2 is now reclassified to create that minimal executable surface first.
+- The Sprint 2 executable surface is runnable baseline only and is not gameplay proof by itself.
 
 ## Last durable delta
 
@@ -59,9 +60,10 @@ Open these files in order:
 2. `docs/tracking/current-sprint.md`
 3. `docs/resets/reset-pack.md`
 4. `docs/plans/PLAN-s02-minimum-executable-surface-intake.md`
-5. `docs/tracking/decision-ledger.md`
-6. `docs/tracking/baseline-matrix.md`
-7. `docs/tracking/evidence-index.jsonl`
-8. `threads/thread_final.md`
+5. `docs/plans/PLAN-return-to-existing-character-selection-map.md`
+6. `docs/tracking/decision-ledger.md`
+7. `docs/tracking/baseline-matrix.md`
+8. `docs/tracking/evidence-index.jsonl`
+9. `threads/thread_final.md`
 
-Then use the existing executable surface as the runnable baseline and resume the next narrow gameplay slice only if the work stays inside `populated account -> existing character selection -> map`.
+Then use the existing executable surface as runnable baseline only, require fresh `world.log` as primary proof, and rollback immediately if the slice cannot stay inside `populated account -> existing character selection -> map`.

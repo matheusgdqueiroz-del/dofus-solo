@@ -71,3 +71,11 @@
 ## 2026-04-10 - Sprint 2 closes at executable-surface proof and hands back to the pregame slice
 - Decision: Sprint 2 is complete once the repo-local .NET health shell is proven by `build + run + deterministic local artifact`, and the next narrow step returns to `populated account -> existing character selection -> map` using that shell only as the runnable baseline.
 - Why: this keeps the executable-surface blocker closed, preserves the no-gameplay boundary of Sprint 2, and gives the next Architect pass one safe narrow slice to resume.
+
+## 2026-04-10 - The executable surface is runnable baseline only for the next slice
+- Decision: `src/MinimumExecutableSurface` is only the runnable baseline for the return to `populated account -> existing character selection -> map`; it does not count as gameplay proof.
+- Why: this preserves the closed boundary of Sprint 2 and prevents the health shell from being mistaken for progress on the gameplay slice.
+
+## 2026-04-10 - The next slice must rollback if fresh world.log cannot be reached inside scope
+- Decision: the return to `populated account -> existing character selection -> map` must stop immediately if fresh repo-local `world.log` cannot be produced without reopening prohibited areas.
+- Why: the next slice is log-first by rule, and forcing it forward without a fresh log path would reopen the same broad-scope risk that Sprint 2 was meant to avoid.

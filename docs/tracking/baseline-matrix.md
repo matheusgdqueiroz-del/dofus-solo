@@ -9,8 +9,8 @@ Use this file to classify what the rebuild should do with each important area.
 | Pregame constants | `threads/thread_final.md` | Closed | Carry forward now | `ServerId = 36` and `7121 = ServerSelectionMessage` |
 | Client patch strategy | `threads/thread_final.md` | Closed | Carry forward now | Minimal patch only; prefer deterministic `patch-state`; no blind repatch |
 | Progress tracking model | `threads/thread_final.md` | Closed | Carry forward now | Keep tracker conservative and separate current slice from global progress |
-| Executable rebuild surface | `docs/evidence/s02-minimum-executable-surface/health.json` + `docs/tracking/evidence-index.jsonl` | Proven in Sprint 2 | Carry forward now | Repo-local .NET console shell in `src/MinimumExecutableSurface`; use it as the runnable baseline, not as gameplay proof |
-| Safe initial baseline | `threads/thread_final.md` | Proven | Resume now | Real user flow only; populated account -> existing character selection -> map; stop at first map load and keep proof log-first |
+| Executable rebuild surface | `docs/evidence/s02-minimum-executable-surface/health.json` + `docs/tracking/evidence-index.jsonl` | Proven in Sprint 2 | Carry forward now | Repo-local .NET console shell in `src/MinimumExecutableSurface`; use it as runnable baseline only, never as gameplay proof |
+| Safe initial baseline | `threads/thread_final.md` | Proven | Resume now | Real user flow only; populated account -> existing character selection -> map; stop at first map load; require fresh `world.log` first and use screenshot only as corroboration |
 | Empty-account creation flow | `threads/thread_final.md` | Proven | Revalidate later | Outside Sprint 1 |
 | Create-via-selection flow | `threads/thread_final.md` | Proven | Revalidate later | Outside Sprint 1 |
 | Incarnam normal quest baseline | `threads/thread_final.md` | Useful but revalidate | Revalidate later | Future normal quest anchor is `1632 Le village dans les nuages` |
