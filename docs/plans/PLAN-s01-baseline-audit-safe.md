@@ -35,7 +35,7 @@ Define, in writing, what the new rebuild should carry forward now, what needs la
 
 ## Acceptance
 
-- The safest initial baseline is locked as populated account -> character selection -> map
+- The safest initial baseline is locked as populated account -> existing character selection -> map
 - The baseline matrix has no ambiguous `maybe` classification
 - The old project is documented as reference-only
 - No files outside the approved documentation scope are changed

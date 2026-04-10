@@ -33,7 +33,7 @@
 - Why: the rebuild still needs a safe intake boundary before any gameplay implementation begins.
 
 ## 2026-04-10 - Safe initial baseline is populated account to map
-- Decision: the first rebuild baseline is `populated account -> character selection -> map`.
+- Decision: the first rebuild baseline is `populated account -> existing character selection -> map`.
 - Why: it is the smallest already-proven slice with the lowest risk and does not force tutorial, quest, or combat complexity into the first implementation sprint.
 
 ## 2026-04-10 - Old project remains reference-only during Sprint 1

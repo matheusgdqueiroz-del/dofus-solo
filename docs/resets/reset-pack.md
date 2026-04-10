@@ -21,7 +21,7 @@
 - Checkpoints must be script-driven.
 - No broad refactors and no bulk copying from the old project.
 - Every role must end with a copy-paste-ready next prompt.
-- The first safe rebuild baseline is `populated account -> character selection -> map`.
+- The first safe rebuild baseline is `populated account -> existing character selection -> map`.
 
 ## Last durable delta
 

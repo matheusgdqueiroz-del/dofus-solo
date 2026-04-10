@@ -52,4 +52,4 @@ None. The sprint is documentation-only and can proceed from the Sprint 0 foundat
 
 ## Next narrow step
 
-Execute the first implementation sprint only for the chosen pregame baseline: populated account -> character selection -> map.
+Execute the first implementation sprint only for the chosen pregame baseline: populated account -> existing character selection -> map.
