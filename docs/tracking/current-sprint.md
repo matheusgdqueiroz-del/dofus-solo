@@ -2,7 +2,7 @@
 
 - Date: 2026-04-10
 - Sprint: `S02 - Pregame Existing Character To Map`
-- Status: `active`
+- Status: `stopped by rollback`
 - Branch: `work/s02-pregame-existing-character-to-map`
 
 ## Goal
@@ -49,7 +49,7 @@ Reprove the smallest safe pregame slice in the new rebuild through the real user
 
 ## Current blocker
 
-Unknown until the real populated-account selection-to-map path is re-run on this sprint branch.
+The sprint branch has no runnable rebuild surface yet. A fresh tree scan of `HEAD` shows only docs, prompts, scripts, and threads; there is no runtime, client, server, launcher, harness, or log path inside this repo to execute `populated account -> existing character selection -> map`.
 
 ## Rollback triggers
 
@@ -58,6 +58,12 @@ Unknown until the real populated-account selection-to-map path is re-run on this
 - Two narrow hypotheses fail.
 - The traced fix requires a broad patch, helper rewrite, dependency swap, or reopening auth/launcher/protocol/bootstrap without stronger evidence.
 
+## Rollback outcome
+
+- Trigger hit: the real blocker sits before the allowed `selection -> map` trail because the new rebuild repo does not yet contain the runnable implementation surface required to test or patch this slice.
+- Continuing Sprint 2 from this branch would require a broad runtime intake or old-project code import, which violates the narrow-scope rules for this sprint.
+- No fresh `world.log` or screenshots were collected, because there is no executable client/server path in the current repo to generate them.
+
 ## Next narrow step
 
-If Sprint 2 closes successfully, the next narrow step is `populated account -> create via selection -> map`.
+Return to planning and define the smallest safe pre-runtime intake sprint that can introduce a runnable baseline into the rebuild without bulk-copying the old project.
