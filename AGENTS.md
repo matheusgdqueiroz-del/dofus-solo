@@ -49,6 +49,19 @@
 - Use `scripts/Restore-Checkpoint.ps1` to return safely from a tag into a new branch.
 - Never use destructive Git recovery commands as the default path.
 
+## Handoff protocol
+- Every role response must end with a `NEXT PROMPT` handoff block.
+- The handoff block must tell the user:
+  - which role comes next
+  - where to paste the next prompt
+  - the full prompt in a copy-paste-ready fenced block
+- Prefer a simple cyclic flow:
+  - Planner -> Architect -> Orchestrator -> Writer -> Architect
+- If a phase completes or a macro review is needed, use:
+  - Writer -> Planner
+- Do not end a role output with vague advice like "come back later" or "ask X to continue."
+- End with an exact next prompt whenever possible.
+
 ## What to keep short
 - `AGENTS.md` stays short and durable.
 - Detailed planning lives in `docs/plans/`.

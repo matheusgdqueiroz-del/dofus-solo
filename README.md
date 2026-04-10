@@ -51,8 +51,18 @@ Só depois disso o projeto continua evoluindo.
 - `docs/tracking/current-sprint.md`: sprint ativa.
 - `docs/resets/reset-pack.md`: resumo curto para reset.
 - `docs/ops/checkpoints-and-rollback.md`: manual operacional simples.
+- `docs/ops/copy-paste-workflow.md`: manual do ciclo de copiar e colar.
 - `docs/plans/`: planos detalhados por tema.
+- `prompts/`: prompts prontos para cada papel.
 - `threads/`: memória histórica do projeto antigo.
+
+## Se voce quer o caminho mais simples
+
+Abra:
+
+- `prompts/00-START-HERE.md`
+
+Esse arquivo diz qual prompt copiar primeiro.
 
 ## Regra de ouro
 

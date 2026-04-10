@@ -20,6 +20,7 @@
 - Work happens in sprint branches.
 - Checkpoints must be script-driven.
 - No broad refactors and no bulk copying from the old project.
+- Every role must end with a copy-paste-ready next prompt.
 
 ## Last durable delta
 
@@ -45,3 +46,4 @@ Open these files in order:
 4. `docs/tracking/evidence-index.jsonl`
 5. `threads/thread_final.md`
 6. `docs/tracking/baseline-matrix.md`
+7. `docs/ops/copy-paste-workflow.md`

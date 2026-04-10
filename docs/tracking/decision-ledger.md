@@ -23,3 +23,7 @@
 ## 2026-04-09 - Sprint 0 is process-only
 - Decision: Sprint 0 is limited to repo, docs, and safety tooling.
 - Why: this creates a safe base before any gameplay work and prevents early contamination from the old failed project.
+
+## 2026-04-09 - Workflow must be copy-paste driven for the user
+- Decision: every role output must end with the next prompt and where to paste it.
+- Why: the user wants a cyclic workflow with minimal operational thinking and no ambiguity between roles.

@@ -31,6 +31,7 @@ Create the safe foundation of the new rebuild repo without touching gameplay cod
 - Checkpoint workflow exists through scripts.
 - Reset pack exists.
 - Rules against broad refactors are documented.
+- Copy-paste handoff workflow exists and is documented.
 
 ## Allowed paths
 
