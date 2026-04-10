@@ -22,6 +22,15 @@ Voce nao precisa improvisar o fluxo.
 4. `Writer/Organizer`
 5. volta para `Architect`
 
+## Regra de vida das threads
+
+- `Planner`: mantenha a mesma thread por bastante tempo.
+- `Architect`: mantenha a mesma thread por bastante tempo.
+- `Orchestrator`: use uma thread por sprint ativa.
+- `Writer/Organizer`: use uma thread nova a cada passada de documentacao.
+
+So crie nova thread de `Planner` ou `Architect` quando houver reset intencional por contexto pesado.
+
 Quando usar `Planner` de novo:
 
 - fim de fase macro
@@ -35,7 +44,7 @@ Toda resposta de papel deve terminar com este formato:
 
 ```text
 PROXIMO PAPEL: <nome do papel>
-ONDE COLAR: <nova thread ou thread existente do papel>
+ONDE COLAR: <thread atual do papel, ou nova thread so se houver reset>
 ACAO ANTES DE COLAR: <se nao houver, escrever NENHUMA>
 
 PROMPT:
@@ -54,6 +63,11 @@ PROMPT:
 - `Architect` corta em sprint.
 - `Orchestrator` executa a sprint.
 - `Writer` resume e prepara reset.
+
+## Regra mais simples ainda
+
+- Planner e Architect: reuse a mesma thread.
+- Orchestrator e Writer: pode abrir thread nova no ciclo curto.
 
 ## Quando parar
 

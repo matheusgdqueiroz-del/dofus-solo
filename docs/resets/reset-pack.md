@@ -25,6 +25,7 @@
 - Checkpoints must be script-driven.
 - No broad refactors and no bulk copying from the old project.
 - Every role must end with a copy-paste-ready next prompt.
+- Planner and Architect threads should be reused by default.
 - The first safe rebuild baseline is `populated account -> existing character selection -> map`.
 - The first implementation sprint must use fresh `world.log` as primary proof and screenshots only as corroboration.
 - Sprint 2 cannot resume its original gameplay target until the repo has a minimal executable surface.

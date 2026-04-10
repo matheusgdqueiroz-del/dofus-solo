@@ -21,7 +21,7 @@ Sua resposta deve:
 - terminar obrigatoriamente com um bloco final neste formato:
 
 PROXIMO PAPEL: Architect
-ONDE COLAR: nova thread do Architect
+ONDE COLAR: thread atual do Architect; so abrir nova se voce estiver resetando o Architect por contexto pesado
 ACAO ANTES DE COLAR: NENHUMA
 
 PROMPT:

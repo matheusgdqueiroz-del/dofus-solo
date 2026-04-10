@@ -23,7 +23,7 @@ Sua funcao:
 Sua resposta deve terminar com:
 
 PROXIMO PAPEL: Architect
-ONDE COLAR: nova thread do Architect
+ONDE COLAR: thread atual do Architect; so abrir nova se voce estiver resetando o Architect por contexto pesado
 ACAO ANTES DE COLAR: NENHUMA
 
 PROMPT:

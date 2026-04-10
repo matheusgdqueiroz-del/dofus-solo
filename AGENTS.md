@@ -59,6 +59,10 @@
   - Planner -> Architect -> Orchestrator -> Writer -> Architect
 - If a phase completes or a macro review is needed, use:
   - Writer -> Planner
+- Keep one long-lived Planner thread.
+- Keep one long-lived Architect thread until it gets too heavy, then reset it from the latest writer summary.
+- Keep one Orchestrator thread only for the active sprint.
+- Reset the Writer after each documentation pass.
 - Do not end a role output with vague advice like "come back later" or "ask X to continue."
 - End with an exact next prompt whenever possible.
 

@@ -55,3 +55,7 @@
 ## 2026-04-10 - Sprint 2 must be formally reclassified before gameplay resumes
 - Decision: Sprint 2 must not continue as `existing character selection -> map` yet; it must first be reclassified into a minimal executable-surface sprint on the same branch family.
 - Why: the current repo still has no runtime, client, server, launcher, harness, or log path, so the active blocker sits before the intended gameplay slice and cannot be solved by narrow pregame work.
+
+## 2026-04-10 - Planner and Architect threads should be long-lived
+- Decision: the workflow should reuse the same Planner thread and the same Architect thread until a deliberate reset is needed for context reasons.
+- Why: this matches the original workflow model more closely and reduces needless thread churn for the user.

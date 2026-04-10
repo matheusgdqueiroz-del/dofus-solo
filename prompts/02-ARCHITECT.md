@@ -18,7 +18,7 @@ Sua funcao nesta thread:
 Sua resposta deve terminar obrigatoriamente com:
 
 PROXIMO PAPEL: Orchestrator
-ONDE COLAR: nova thread do Orchestrator
+ONDE COLAR: thread atual do Orchestrator se a sprint ainda estiver em andamento; se for abrir a execucao desta sprint agora, use uma nova thread do Orchestrator
 ACAO ANTES DE COLAR: se a sprint mudou, salvar checkpoint
 
 PROMPT:

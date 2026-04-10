@@ -24,7 +24,7 @@ Se a fase macro fechou ou houve rollback importante:
 Sua resposta deve terminar obrigatoriamente com um destes dois formatos:
 
 PROXIMO PAPEL: Architect
-ONDE COLAR: nova thread do Architect
+ONDE COLAR: thread atual do Architect; so abrir nova se voce estiver resetando o Architect por contexto pesado
 ACAO ANTES DE COLAR: NENHUMA
 
 PROMPT:
@@ -33,7 +33,7 @@ PROMPT:
 ou
 
 PROXIMO PAPEL: Planner
-ONDE COLAR: nova thread do Planner
+ONDE COLAR: thread atual do Planner; so abrir nova se voce estiver resetando o Planner por um motivo excepcional
 ACAO ANTES DE COLAR: NENHUMA
 
 PROMPT:
