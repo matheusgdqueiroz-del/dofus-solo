@@ -2,7 +2,7 @@
 
 - Date: 2026-04-10
 - Sprint: `S02 - Minimum Executable Surface Intake`
-- Status: `reclassified`
+- Status: `in_progress`
 - Branch: `work/s02-pregame-existing-character-to-map`
 - Start checkpoint: `cp-20260410-0018-s02-architect-define-sprint-2-active-docs`
 - Rollback checkpoint: `cp-20260410-0020-s02-orchestrator-sprint-2-rollback-no-runtime-surface`
@@ -62,6 +62,12 @@ The repo still has no runnable rebuild surface. A fresh tree scan of `HEAD` show
 - The original Sprint 2 gameplay slice was stopped by rollback for lack of runtime surface.
 - Sprint 2 now targets that earlier blocker directly instead of trying to close `existing character selection -> map`.
 - No gameplay proof is expected in the reclassified sprint.
+
+## Active execution note
+
+- The execution path is now limited to a repo-local minimal executable shell.
+- The working hypothesis is a narrow .NET console surface that can build, run, and write one deterministic repo-local health artifact.
+- The sprint must stop immediately after that proof exists.
 
 ## Next narrow step
 
