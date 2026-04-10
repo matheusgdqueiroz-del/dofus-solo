@@ -63,3 +63,7 @@
 ## 2026-04-10 - Reclassified Sprint 2 stops at executable-surface proof
 - Decision: the reclassified Sprint 2 is successful when the repo can build and run a minimum local executable surface that emits a deterministic repo-local artifact or health log; it does not need to reach selection or map.
 - Why: the current blocker sits before gameplay, so the safest next sprint must prove runnable surface first and only then hand back to the pregame slice.
+
+## 2026-04-10 - First runnable baseline is a repo-local .NET health shell
+- Decision: the first executable surface in the new repo is a narrow .NET console shell that writes a deterministic health artifact under `docs/evidence/`.
+- Why: it is the smallest buildable and runnable local surface available in the current environment and proves execution without reopening gameplay, auth, launcher, protocol, or bootstrap areas.

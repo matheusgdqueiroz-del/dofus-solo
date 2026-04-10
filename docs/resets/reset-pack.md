@@ -13,9 +13,15 @@
 - Sprint 2 stays on the same branch but is now formally reclassified.
 - The repo foundation from Sprint 0 is preserved and remains the safe base.
 - Sprint 1 documentation is complete and stays as the planning baseline.
-- The original Sprint 2 gameplay goal was rolled back because there is still no runnable surface in the repo.
-- The current Sprint 2 goal is the minimum executable-surface intake needed before gameplay can resume safely.
-- The current repo tree still contains only documentation/process scaffolding, so there is no runnable rebuild surface yet for pregame validation.
+- The original Sprint 2 gameplay goal was rolled back because there was still no runnable surface in the repo.
+- The reclassified Sprint 2 executable-surface intake is now complete.
+- The repo now contains a minimal runnable .NET console shell in `src/MinimumExecutableSurface`.
+- The exact proof commands are:
+  - `dotnet build src/MinimumExecutableSurface/MinimumExecutableSurface.csproj`
+  - `dotnet run --project src/MinimumExecutableSurface/MinimumExecutableSurface.csproj --no-build`
+- The proof artifact path is `N:\Codex_Programs\Dofus 2 private_2\docs\evidence\s02-minimum-executable-surface\health.json`.
+- The artifact remained deterministic across two consecutive runs with SHA256 `3E3C34BF976F00C8E0CF640D1C00FCF624940A27ED74BEF68EE092C11800DC8B`.
+- No gameplay, auth, launcher, protocol, or bootstrap area was reopened.
 - The old project remains outside this repo and is reference-only.
 
 ## What is already decided
@@ -33,9 +39,9 @@
 
 ## Last durable delta
 
-- Sprint 2 was formally reclassified on `work/s02-pregame-existing-character-to-map`.
-- The sprint now targets the smallest repo-local executable surface instead of a gameplay slice.
-- The success boundary is now `build + run + deterministic repo-local artifact`, with no gameplay claim attached.
+- Sprint 2 introduced the first repo-local executable surface on `work/s02-pregame-existing-character-to-map`.
+- That surface is a narrow .NET console health shell that builds, runs, and writes a deterministic repo-local artifact.
+- The sprint stopped at executable-surface proof and made no gameplay claim.
 
 ## Open risks
 
@@ -56,4 +62,4 @@ Open these files in order:
 7. `docs/tracking/evidence-index.jsonl`
 8. `threads/thread_final.md`
 
-Then execute only the minimum executable-surface intake and stop before any gameplay slice.
+Then use the existing executable surface as the runnable baseline and resume the next narrow gameplay slice only if the work stays inside `populated account -> existing character selection -> map`.

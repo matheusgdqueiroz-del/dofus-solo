@@ -2,10 +2,11 @@
 
 - Date: 2026-04-10
 - Sprint: `S02 - Minimum Executable Surface Intake`
-- Status: `in_progress`
+- Status: `completed`
 - Branch: `work/s02-pregame-existing-character-to-map`
 - Start checkpoint: `cp-20260410-0018-s02-architect-define-sprint-2-active-docs`
 - Rollback checkpoint: `cp-20260410-0020-s02-orchestrator-sprint-2-rollback-no-runtime-surface`
+- Execution checkpoint before implementation: `cp-20260410-0044-s02-orchestrator-mark-sprint-2-execution-start`
 
 ## Goal
 
@@ -47,7 +48,7 @@ Introduce the smallest runnable surface inside the new repo so later sprints can
 
 ## Current blocker
 
-The repo still has no runnable rebuild surface. A fresh tree scan of `HEAD` shows only docs, prompts, scripts, and threads, so the immediate blocker is not gameplay but the absence of any minimal executable shell inside this repo.
+Resolved in this sprint. The repo now has a minimal repo-local executable shell, so the executable-surface blocker is no longer the active stop point for the rebuild.
 
 ## Rollback triggers
 
@@ -63,12 +64,15 @@ The repo still has no runnable rebuild surface. A fresh tree scan of `HEAD` show
 - Sprint 2 now targets that earlier blocker directly instead of trying to close `existing character selection -> map`.
 - No gameplay proof is expected in the reclassified sprint.
 
-## Active execution note
+## Execution result
 
-- The execution path is now limited to a repo-local minimal executable shell.
-- The working hypothesis is a narrow .NET console surface that can build, run, and write one deterministic repo-local health artifact.
-- The sprint must stop immediately after that proof exists.
+- The smallest executable surface introduced is a support-only .NET console shell in `src/MinimumExecutableSurface`.
+- Build command: `dotnet build src/MinimumExecutableSurface/MinimumExecutableSurface.csproj`
+- Run command: `dotnet run --project src/MinimumExecutableSurface/MinimumExecutableSurface.csproj --no-build`
+- Proof artifact: `docs/evidence/s02-minimum-executable-surface/health.json`
+- Determinism check: two consecutive runs produced the same SHA256 for the proof artifact: `3E3C34BF976F00C8E0CF640D1C00FCF624940A27ED74BEF68EE092C11800DC8B`
+- Scope stop respected: no gameplay, auth, launcher, protocol, or bootstrap work was added.
 
 ## Next narrow step
 
-Have the Orchestrator introduce the minimum executable surface, prove it with a repo-local build/run artifact, and stop before any gameplay slice.
+Return safely to the blocked slice `populated account -> existing character selection -> map`, using the new executable surface only as the runnable baseline and keeping proof centered on fresh logs/artifacts rather than screenshots.

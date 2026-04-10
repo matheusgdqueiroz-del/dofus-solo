@@ -1,0 +1,8 @@
+{
+  "Surface": "minimum-executable-surface",
+  "Status": "ok",
+  "Scope": "support-only",
+  "BuildCommand": "dotnet build src/MinimumExecutableSurface/MinimumExecutableSurface.csproj",
+  "RunCommand": "dotnet run --project src/MinimumExecutableSurface/MinimumExecutableSurface.csproj --no-build",
+  "ArtifactRelativePath": "docs/evidence/s02-minimum-executable-surface/health.json"
+}
