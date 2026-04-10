@@ -3,14 +3,15 @@
 - Date: 2026-04-10
 - Repo path: `N:\Codex_Programs\Dofus 2 private_2`
 - Old reference path: `N:\Codex_Programs\Dofus 2 private`
-- Active branch: `work/s01-baseline-audit-safe`
+- Active branch: `work/s02-pregame-existing-character-to-map`
 - Last known remote: `origin/main`
 
 ## Current state
 
-- Sprint 1 documentation is complete on a dedicated sprint branch.
+- Sprint 2 is now active on a dedicated sprint branch.
 - The repo foundation from Sprint 0 is preserved and remains the safe base.
-- The first narrow implementation sprint is defined but not started yet.
+- Sprint 1 documentation is complete and stays as the planning baseline.
+- Sprint 2 is limited to the first narrow implementation reproof: populated account -> existing character selection -> map.
 - The old project remains outside this repo and is reference-only.
 
 ## What is already decided
@@ -26,15 +27,13 @@
 
 ## Last durable delta
 
-- Sprint 2 was defined on paper:
-  - exact slice locked as `populated account -> existing character selection -> map`
-  - proof bundle locked as fresh `world.log` plus corroborating screenshots
-  - next adjacent slice kept outside as `create via selection -> map`
+- Sprint 2 was opened from `work/s01-baseline-audit-safe` into `work/s02-pregame-existing-character-to-map`.
+- The active sprint docs now point to the live Sprint 2 branch and keep the exact slice locked as `populated account -> existing character selection -> map`.
 
 ## Open risks
 
 - The old project can still contaminate decisions if copied blindly.
-- The first implementation sprint can drift into adjacent pregame paths if the boundary is not enforced.
+- The active implementation sprint can drift into adjacent pregame paths if the boundary is not enforced.
 - Closed areas like auth, launcher, protocol, and bootstrap can be reopened by habit without fresh evidence.
 
 ## Next first step after reset
@@ -44,6 +43,8 @@ Open these files in order:
 1. `AGENTS.md`
 2. `docs/tracking/current-sprint.md`
 3. `docs/plans/PLAN-s02-pregame-existing-character-to-map.md`
-4. `docs/tracking/baseline-matrix.md`
+4. `docs/resets/reset-pack.md`
 5. `docs/tracking/decision-ledger.md`
-6. `threads/thread_final.md`
+6. `docs/tracking/baseline-matrix.md`
+7. `docs/tracking/evidence-index.jsonl`
+8. `threads/thread_final.md`
