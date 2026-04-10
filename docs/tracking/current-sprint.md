@@ -2,7 +2,7 @@
 
 - Date: 2026-04-10
 - Sprint: `S01 - Baseline Audit Safe`
-- Status: `active`
+- Status: `completed`
 - Branch: `work/s01-baseline-audit-safe`
 
 ## Goal
@@ -48,8 +48,8 @@ Close, in writing, what enters the new rebuild now, what stays for later revalid
 
 ## Current blocker
 
-None. The sprint is documentation-only and can proceed from the Sprint 0 foundation.
+None. Sprint 1 documentation and consistency review are complete.
 
 ## Next narrow step
 
-Execute the first implementation sprint only for the chosen pregame baseline: populated account -> existing character selection -> map.
+Start `S02 - Pregame Existing Character To Map` on `work/s02-pregame-existing-character-to-map` and prove only this slice: populated account -> existing character selection -> map.

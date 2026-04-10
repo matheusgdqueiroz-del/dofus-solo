@@ -8,9 +8,9 @@
 
 ## Current state
 
-- Sprint 1 is open on a dedicated sprint branch.
+- Sprint 1 documentation is complete on a dedicated sprint branch.
 - The repo foundation from Sprint 0 is preserved and remains the safe base.
-- The current sprint is documentation-only and does not touch gameplay code.
+- The first narrow implementation sprint is defined but not started yet.
 - The old project remains outside this repo and is reference-only.
 
 ## What is already decided
@@ -22,19 +22,19 @@
 - No broad refactors and no bulk copying from the old project.
 - Every role must end with a copy-paste-ready next prompt.
 - The first safe rebuild baseline is `populated account -> existing character selection -> map`.
+- The first implementation sprint must use fresh `world.log` as primary proof and screenshots only as corroboration.
 
 ## Last durable delta
 
-- Sprint 1 scope is now locked:
-  - safe initial baseline chosen
-  - baseline matrix expanded
-  - decision ledger aligned
-  - reset path aligned with the active sprint
+- Sprint 2 was defined on paper:
+  - exact slice locked as `populated account -> existing character selection -> map`
+  - proof bundle locked as fresh `world.log` plus corroborating screenshots
+  - next adjacent slice kept outside as `create via selection -> map`
 
 ## Open risks
 
 - The old project can still contaminate decisions if copied blindly.
-- Sprint 1 can drift into gameplay, tutorial, combat, or quest work if the baseline boundary is not enforced.
+- The first implementation sprint can drift into adjacent pregame paths if the boundary is not enforced.
 - Closed areas like auth, launcher, protocol, and bootstrap can be reopened by habit without fresh evidence.
 
 ## Next first step after reset
@@ -43,7 +43,7 @@ Open these files in order:
 
 1. `AGENTS.md`
 2. `docs/tracking/current-sprint.md`
-3. `docs/plans/PLAN-s01-baseline-audit-safe.md`
+3. `docs/plans/PLAN-s02-pregame-existing-character-to-map.md`
 4. `docs/tracking/baseline-matrix.md`
 5. `docs/tracking/decision-ledger.md`
 6. `threads/thread_final.md`

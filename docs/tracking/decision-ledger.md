@@ -39,3 +39,15 @@
 ## 2026-04-10 - Old project remains reference-only during Sprint 1
 - Decision: `N:\Codex_Programs\Dofus 2 private` remains reference-only and cannot be used as a code base for Sprint 1.
 - Why: Sprint 1 is about safe intake, not rescue, and the old project is still a contamination risk.
+
+## 2026-04-10 - First implementation sprint is existing character to map only
+- Decision: the first implementation sprint is limited to `populated account -> existing character selection -> map`.
+- Why: it is the smallest proven pregame slice and avoids dragging empty-account, quest, tutorial, or combat complexity into the first implementation pass.
+
+## 2026-04-10 - Success proof for the first implementation sprint must be log-first
+- Decision: success for the first implementation sprint must be proven by a fresh real-user run with fresh `world.log`, with screenshots used only as corroboration.
+- Why: screenshot alone is not strong enough proof for pregame state, and harness-only proof is not enough for the rebuild baseline.
+
+## 2026-04-10 - Next adjacent pregame slice stays create-via-selection
+- Decision: after success on existing-character selection to map, the next narrow pregame slice should be `populated account -> create via selection -> map`.
+- Why: it stays inside the same populated-account selection surface and is narrower than reopening the empty-account path.

@@ -9,7 +9,7 @@ Use this file in Sprint 1 to classify what the rebuild should do with each impor
 | Pregame constants | `threads/thread_final.md` | Closed | Carry forward now | `ServerId = 36` and `7121 = ServerSelectionMessage` |
 | Client patch strategy | `threads/thread_final.md` | Closed | Carry forward now | Minimal patch only; prefer deterministic `patch-state`; no blind repatch |
 | Progress tracking model | `threads/thread_final.md` | Closed | Carry forward now | Keep tracker conservative and separate current slice from global progress |
-| Safe initial baseline | `threads/thread_final.md` | Proven | Rebuild first | Populated account -> existing character selection -> map |
+| Safe initial baseline | `threads/thread_final.md` | Proven | Rebuild first | Real user flow only; populated account -> existing character selection -> map; stop at first map load |
 | Empty-account creation flow | `threads/thread_final.md` | Proven | Revalidate later | Outside Sprint 1 |
 | Create-via-selection flow | `threads/thread_final.md` | Proven | Revalidate later | Outside Sprint 1 |
 | Incarnam normal quest baseline | `threads/thread_final.md` | Useful but revalidate | Revalidate later | Future normal quest anchor is `1632 Le village dans les nuages` |
