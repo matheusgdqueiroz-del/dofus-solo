@@ -4,6 +4,8 @@
 - Sprint: `S02 - Pregame Existing Character To Map`
 - Status: `stopped by rollback`
 - Branch: `work/s02-pregame-existing-character-to-map`
+- Start checkpoint: `cp-20260410-0018-s02-architect-define-sprint-2-active-docs`
+- Rollback checkpoint: `cp-20260410-0020-s02-orchestrator-sprint-2-rollback-no-runtime-surface`
 
 ## Goal
 

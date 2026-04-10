@@ -4,6 +4,8 @@
 - Repo path: `N:\Codex_Programs\Dofus 2 private_2`
 - Old reference path: `N:\Codex_Programs\Dofus 2 private`
 - Active branch: `work/s02-pregame-existing-character-to-map`
+- Sprint start checkpoint: `cp-20260410-0018-s02-architect-define-sprint-2-active-docs`
+- Rollback checkpoint: `cp-20260410-0020-s02-orchestrator-sprint-2-rollback-no-runtime-surface`
 - Last known remote: `origin/main`
 
 ## Current state
